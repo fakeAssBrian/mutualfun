@@ -530,12 +530,6 @@ a.button small {
   display: block;
   font-size: 11px;
 }
-header a.button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: transparent url(../images/github-button.png) 0 0 no-repeat;
-}
 aside a.button {
   display: block;
   width: 138px;
@@ -544,32 +538,13 @@ aside a.button {
   font-size: 21px;
   background: transparent url(../images/download-button.png) 0 0 no-repeat;
 }
-
-code, pre {
-  margin-bottom: 30px;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 13px;
-  color: #222;
-}
-
-code {
-  padding: 0 3px;
-  background-color: #f2f8fc;
-  border: solid 1px #dbe7f3;
-}
-
-pre {
-  padding: 20px;
-  overflow: auto;
-  text-shadow: none;
-  background: #fff;
-  border: solid 1px #f2f2f2;
-}
-pre code {
-  padding: 0;
-  color: #2879d0;
-  background-color: #fff;
-  border: none;
+#main-content a.button {
+  display: block;
+  width: 138px;
+  padding-left: 64px;
+  margin-bottom: 20px;
+  font-size: 21px;
+  background: transparent url(../images/download-button.png) 0 0 no-repeat;
 }
 
 ul, ol, dl {
@@ -859,6 +834,10 @@ footer a:hover {
     border-top: solid 1px #ddd;
   }
   aside#sidebar a.button {
+    display: none;
+  }
+
+  #main-content a.button {
     display: none;
   }
   #main-content h1:before,
